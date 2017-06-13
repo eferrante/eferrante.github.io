@@ -239,7 +239,7 @@
 		#me
 		{
 			padding: 0;
-			height: 20em;
+			height: 21em;
 		}
 		
 			#me .pic
@@ -309,6 +309,7 @@
 				width: 100%;
 				height: 100%;
 				margin-left: 2.5em;
+				margin-top: -5em;
 			}
 			
 				#me header > h1
@@ -326,7 +327,6 @@
 					top: 52.5%;
 					font-size: 1.5em;
 					letter-spacing: -0.015em;
-					margin-top: 0;
 				}
 
 /*********************************************************************************/
