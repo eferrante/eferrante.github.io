@@ -1,5 +1,5 @@
 @charset 'UTF-8';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic');
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic');
 @import url('font-awesome.min.css');
 
 /*
@@ -11,22 +11,6 @@
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
-.thumb {}
-.thumb {
-float: left;
-margin-top: 5px;
-margin-left: 10px;
-margin-right: 15px;
-margin-bottom: 10px;
-vertical-align: middle;
-width: 150px;
-height: auto;
-}
-
-.text_publications {
-margin-left: 180px;
-}
-
 .mid {
     vertical-align:middle
     }
@@ -94,10 +78,8 @@ margin-left: 180px;
 	{
 		border: 0;
 		border-top: solid 1px #ddd;
-		padding: 0.5em 0 0 0;
-		margin: 0.5em 0 0 0;
-		clear: both;
-
+		padding: 1.5em 0 0 0;
+		margin: 1.75em 0 0 0;
 	}
 	
 	sub
