@@ -135,3 +135,17 @@ footer a{color:var(--muted)}
 .langsw a:hover{text-decoration:none;color:var(--text)}
 .langsw a.on{background:var(--accent-soft);color:var(--text)}
 .portrait .social{justify-content:center;margin-top:18px}
+
+/* Scholar card: stats left, citations chart right */
+.scholar-main{flex:1 1 300px;display:flex;flex-direction:column;align-items:flex-start}
+.scholar-main .btn{margin-top:22px}
+.scholar-chart{flex:1.4 1 340px;min-width:0}
+.ctitle{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:6px}
+.cplot{display:flex;align-items:flex-end;gap:clamp(3px,1vw,8px);height:150px;border-bottom:1px solid color-mix(in srgb,var(--accent) 35%,transparent)}
+.ccol{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;min-width:0}
+.cb{width:100%;background:var(--accent);border-radius:3px 3px 0 0;min-height:2px}
+.ccol.partial .cb{background:repeating-linear-gradient(135deg,var(--accent) 0 5px,color-mix(in srgb,var(--accent) 60%,#fff) 5px 10px)}
+.cv{font-size:11px;color:var(--muted);margin-bottom:2px;white-space:nowrap}
+.clabels{display:flex;gap:clamp(3px,1vw,8px);margin-top:4px}
+.clabels span{flex:1;text-align:center;font-size:11px;color:var(--muted)}
+@media (max-width:560px){.cv{font-size:9px}.clabels span{font-size:9px}}
