@@ -1,702 +1,153 @@
-<!DOCTYPE HTML>
-<!--
-	Astral by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Enzo Ferrante || Personal Website</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Enzo Ferrante — AI Researcher</title>
+<meta name="description" content="Enzo Ferrante is an AI researcher at CONICET–University of Buenos Aires working on trustworthy machine learning for healthcare.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-99022496-1', 'auto');
-  ga('send', 'pageview');
-
+(function(){try{var p=localStorage.getItem('lang');var l=p||((navigator.languages&&navigator.languages[0])||navigator.language||'');if(/^es/i.test(l))location.replace('es/index.html')}catch(e){}})();
 </script>
-	</head>
-	<body>
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T5F7ST"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T5F7ST');</script>
-<!-- End Google Tag Manager -->
+<link rel="alternate" hreflang="en" href="https://eferrante.github.io/index.html">
+<link rel="alternate" hreflang="es" href="https://eferrante.github.io/es/index.html">
+<link rel="alternate" hreflang="x-default" href="https://eferrante.github.io/index.html">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/lang.js" defer></script>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html">Enzo Ferrante</a>
+  <a class="link active" href="index.html">Home</a>
+  <a class="link" href="publications.html">Publications</a>
+  <a class="link" href="talks.html">Talks &amp; Media</a>
+  <span class="langsw"><a class="on" href="index.html" data-set-lang="en" hreflang="en">EN</a><a href="es/index.html" data-set-lang="es" hreflang="es">ES</a></span>
+</div></header>
 
-		<!-- Wrapper-->
-			<div id="wrapper">
-
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#me" class="icon fa-home active"><span>Home</span></a>
-						<a href="#about" class="icon fa-male"><span>About me</span></a>
-						<a href="https://scholar.google.fr/citations?user=ArqlkTUAAAAJ&hl=en" class="icon fa-search"><span>Publications</span></a>
-						<!-- <a href="#teaching" class="icon fa-folder"><span>Teaching</span></a> -->
-           <!--  <a href="#talks" class="icon fa-play"><span>Talks</span></a>
- 						 <a href="https://scholar.google.fr/citations?user=ArqlkTUAAAAJ&hl=en" class="icon fa-bar-chart"><span>Scholar</span></a>
-						<a href="https://instagram.com/ferranteenzo/" class="icon fa-instagram"><span>Instagram</span></a>-->
-						<a href="https://twitter.com/enzoferrante/" class="icon fa-twitter"><span>Twitter</span></a>
-            <a href="https://www.linkedin.com/in/enzo-ferrante/" class="icon fa-linkedin"><span>LinkedIn</span></a>
-
-
-
-            <!-- <a href="https://gitlab.com/users/eferrante/projects" class="icon fa-code"><span>Gitlab</span></a> -->
-
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Me -->
-							<article id="me" class="panel">
-								<header>
-
-									<h1>Enzo Ferrante</h1>
-							<p>AI Researcher<br>
-<hr>
-                  <div class="enzo" style="width: 550px; height: 220px; overflow-y: scroll; position: absolute; bottom: -60px; font-size : 16px; line-height:100%;  text-align:justify; padding-right: 30px;">
-<p>
-
-I hold a PhD in Computer Science from <b>Université Paris-Saclay and INRIA</b> (France), and a Systems Engineering degree from <b>UNICEN</b> (Argentina). I was a postdoctoral researcher at <b>Imperial College London</b> (UK), a Fulbright Visiting Researcher at <b>Harvard Medical School</b> (US) and an Invited Professor at <b>Université Paris-Saclay</b>.
-<br><br>
-Currently, I’m a faculty researcher at <b>CONICET–University of Buenos Aires</b> in Argentina. My research interests span machine learning for computer vision and NLP, currently focusing on fairness and robustness, with applications in healthcare. My work on machine learning has earned awards such as the Mercosur Science & Technology Award, the Google Award for Inclusion Research, and the UK Royal Academy of Engineering’s Distinguished International Associate Award, among others.
-
-<!--<b>News!</b><br>
-
-<ul>
-  <li><br></li>
-  
-  <li><b>- 2022, January:</b> I was invited to moderate the presentation given by Lelia Marie Hampton at the <a href="https://aiforgood.itu.int/event/ai-enabled-public-health-from-a-marginalized-perspective/">the AI for Good talk series</a> about "AI enabled public health from a marginalized perspective".<br><br></li>
-    <li><br></li>
-  <li><b>- 2021, December:</b> On December 6th I gave a seminar <a href="https://aiforgood.itu.int/event/fairness-of-machine-learning-classifiers-in-medical-image-analysis/">at the AI for Good talk series</a> organized by the International Telecomunications Union (<b>ITU@United Nations</b>) about "Fairness of machine learning classifiers in medical image analysis". <a href="https://eferrante.github.io/index.html#talks">Video available in the Talks tab.</a><br><br></li>
-    <li><br></li>
-    
-  <li><b>- 2021, December:</b> Our work at <a href="http://www.ciecti.org.ar/arphai/">ARPH.AI</a> on de-binarization of gender identity on the Argentina’s Electronic Health Record System was featured by  <a href="https://www.covidsouth.ai/research/blogs/ARPHAI-Pushes-for-the-De-binarization-of-Argentinas-Electronic-Health-Record-System">the Global South AI for COVID program</a> <br><br></li>    
-  
-  <li><br></li>
-  
-  <li><b>- 2021, November:</b> I was invited to give a seminar about "Gender bias in X-ray classifiers for computer-assisted diagnosis" at the <a href="http://fairmed.compute.dtu.dk/seminar.php">Responsible AI Seminar</a> organized by the <b>Danmarks Tekniske Universitet (DTU)</b>. <a href="https://eferrante.github.io/index.html#talks">Video available in the Talks tab.</a><br></li>
-  
-  <li><br></li>
-  
-  <li><b>- 2021, July:</b> Our paper <a href="https://arxiv.org/pdf/2108.01621.pdf">Domain Generalization via Gradient Surgery</a> was accepted for publication at <b>ICCV 2021</b>.</a>.<br></li>
-  
-  <li><br></li>
-  
-  <li><b>- 2021, July:</b> I received the <a href="https://www.miccai2021.org/en/MICCAI-2021-OUTSTANDING-REVIEWER-AWARDS.html">Honorable Mention Reviewer Award</a> for <b>MICCAI 2021</b>.</a>.<br></li>
-  
-  <li><br></li>
-  
-  <li><b>- 2021, July:</b> I joined the <a href="https://www.martinos.org/">A. Martinos Center for Biomedical Imaging</a> (Massachusetts General Hospital - Harvard Medical School) in Boston, as a <a href="https://us.fulbrightonline.org/">Fulbright</a> Visitng Researcher during the summer! I'll be working with Juan Eugenio Iglesias, Adrian Dalca and Burce Fischl. If you are in the Boston area and want to meet, just drop me a message! </a>.<br></li>
-  
-  <li><br></li>
-  
-  <li><b>- 2021, June:</b> Our work <a href="https://arxiv.org/abs/2106.09832">"HybridGNet: Hybrid graph convolutional neural networks for landmark-based anatomical segmentation"</a> was accepted at <b>MICCAI 2021</b>! Joint work with Nicolás Gaggion, Lucas Mansilla and Diego Milone.</a>.<br></li>
-
-  <li><br></li>
-  
-  <li><b>- 2021, May:</b> I received the <a href="http://cvpr2021.thecvf.com/node/184">Outstanding Reveiwer Award</a> for <b>CVPR 2021</b>.</a>.<br></li>
-  <li><br></li>
-
-  <li><b>- 2021, May:</b> Our work <a href="https://arxiv.org/abs/2105.10827">"Orthogonal Ensemble Networks for Biomedical Image Segmentation"</a> was (early) accepted at <b>MICCAI 2021</b>! Joint work with Agostina Larrazabal, Cesar Martinez and Jose Doltz.</a>.<br></li>
-
-  <li><br></li>
-
-  <li><b>- 2021, May:</b> I was invited as keynote speaker to Khipu 2021, to talk about <b>self-supervised learning in biomedical image analysis</b>, toghether with <b>Yann Lecun and Sandra Avila</b>. <a href="https://www.crowdcast.io/e/z1lnwaq6">The talk is available here</a>.</a>.<br></li>
-
-  <li><br></li>
-  <li><b>- 2021, January:</b> Nicolás Nieto was awarded the <a href="https://researchparasite.com/">Junior Research Parasite Award</a> for our work "Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis", <a href="https://www.pnas.org/content/117/23/12592">published last year in PNAS</a>.<br></li>
-  <li><br></li>
-
-  <li><b>- 2020, December:</b> I was awarded the <a href="https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2020/12/mcti-e-cnpq-entregam-premiacao-a-vencedores-do-premio-mercosul-de-ciencia-e-tecnologia">Mercosur Science and Technology Award</a> on the topic "Artificial Intelligence".<br></li>
-
-  <li><br></li>
-  <li><b>- 2020, November:</b> We received an International Exchanges Grant from the <a href="https://royalsociety.org/">Royal Society (UK)</a> to support our project on Imaging Genetics with Alex Frangi and Rodrigo Bonazolla (University of Leeds).</li>
-
-  <li><br></li>
-  <li><b>- 2020, November:</b> Computer Vision News featured an <a href="https://www.rsipvision.com/ComputerVisionNews-2020November/">interview to Franco Matzkin</a>, one of my PhD students, about our MICCAI and Autoimplant Challenge papers on skull reconstruction!</li>
-
-  <li><br></li>
-  <li><b>- 2020, October:</b> I received the Young Investigator Award from the <a href="http://fich.unl.edu.ar/noticia/premio-estimulo-enzo-ferrante-2020/908/">National Academy of Exact, Physical and Natural Sciences of Argentina</a></li>
-
-   <li><br></li>
-  <li><b>- 2020, October: </b>Our work <a href="https://arxiv.org/pdf/2009.13704.pdf">"Cranial Implant Design via Virtual Craniectomy with Shape Priors"</a> (with F Matzkin, V Newcombe & B Glocker) received a Best Paper Award from the <a href="https://autoimplant.grand-challenge.org/">MICCAI Autoimplant Workshop 2020</a>.</li>
-
-  <li><br></li>
-  <li><b>- 2020, October:</b>I co-organized the <a href="https://grail-miccai.github.io/">3rd International Workshop on Graphs in Biomedical Image Analysis (GRAIL)</a> at MICCAI 2020. </li>
-
-  <li><br></li>
-  <li><b>- 2020, October: </b>Julian Palladino presented our work <a href="https://arxiv.org/abs/2009.04985">"Unsupervised Domain Adaptation via CycleGAN for White Matter Hyperintensity Segmentation in Multicenter MR Images"</a> at SIPAIM 2020, jointly organized with MICCAI.</li>
-
-  <li><br></li>
-  <li><b>- 2021, September: </b>I was invited to give a talk (<a href="https://wse.zoom.us/rec/play/lVnPqhu9KOZ7Ldgq8C72qgK7bBEhujzm0G9FU-s9SLx1I25KQHbo5cDGgz2WdBfzKBOrQES6PIoGM2Aq.9PjBK6yPaQfUajSj?startTime=1598974826000&_x_zm_rtaid=yWfrhZCORkOUlI8CIGKObQ.1610921578338.a202948f41948c8869ca3a6f0d1c1a7b&_x_zm_rhtaid=440">see the recorded talk here</a>) at the seminar organized by the <a href="https://www.cis.jhu.edu/">Center for Imaging Science (CIS)</a> and the <a href="https://www.minds.jhu.edu/">Mathematical Institute for Data Science (MINDS)</a>, at Johns Hopkins University, about our work on anatomically plausible medical image processing.</li>
-
-  <li><br></li>
-  <li><b>- 2020, August: </b>I was invited to present our work "Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis" recently published in PNAS at the Stanford AIMI Journal Club. <a href="https://eferrante.github.io/index.html#talks">Video available in the Talks tab.</a></li>
-
-    <li><br></li>
-  <li><b>- 2020, May: </b>Our article "Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis" was <a href="https://www.pnas.org/content/117/23/12592">just published in PNAS</a> and featured by <a href="https://www.statnews.com/2020/05/25/ai-systems-training-data-sex-bias/"> STAT News</a>.</li>
-
-    <li><br></li>
-  <li><b>- 2020, May:</b> I added this news section to my website! </a>.
-
-</ul>
--->
+<main class="wrap">
+<div class="hero">
+  <div>
+    <span class="eyebrow">AI Researcher</span>
+    <h1>Enzo <span>Ferrante</span></h1>
+    <p class="lead">I build <b>robust and fair machine learning</b> methods for computer vision and NLP, with a focus on <b>healthcare</b> and <b>biology</b>.</p>
+    <div class="affil">
+      <div class="affil-logos">
+        <a href="https://www.conicet.gov.ar/" title="CONICET"><img src="images/logos/conicet.svg" alt="CONICET" style="height:46px"></a>
+        <a href="https://liaa.dc.uba.ar/" title="LIAA"><img src="images/logos/liaa.png" alt="LIAA, Laboratorio de Inteligencia Artificial Aplicada" style="height:40px"></a>
+        <a href="https://www.uba.ar/" title="Universidad de Buenos Aires"><img src="images/logos/uba.png" alt="Universidad de Buenos Aires" style="height:34px"></a>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="publications.html">Publications</a>
+      <a class="btn" href="talks.html">Talks &amp; Media</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="portrait"><img src="images/enzo.jpg" alt="Enzo Ferrante">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/enzo-ferrante/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+      <a href="https://instagram.com/ferranteenzo/" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></a>
+      <a href="https://twitter.com/enzoferrante/" aria-label="X (Twitter)" title="X (Twitter)"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+    </div>
+  </div>
 </div>
-</p>
 
-								</header>
-
-								<a href="#about" class="jumplink pic">
-
-									<img src="images/mebn2.jpg" alt="" />
-								</a>
-
-							</article>
-
-
-				<!-- Teaching -->
-							<article id="about" class="panel">
-								<header>
-									<h2>About me</h2>
-								</header>
-<section>
-<p style="text-align:justify">
-
-I hold a permenent position as <a href="https://www.conicet.gov.ar/">CONICET</a> faculty researcher in Argentina, leading a research line on machine learning methods for biological and medical image analysis at the <a href="https://liaa.dc.uba.ar/es/inicio/">Applied Artificial Intelligence Laboratory - LIAA (CONICET / Universidad de Buenos Aires)</a> in Argentina. I'm also a professor at <a href="https://www.utdt.edu/"> Universidad Torcuato Di Tella</a> and <a href="https://udesa.edu.ar/">Universidad de San Andrés</a>, in Buenos Aires, Argentina. In 2012 I received my Systems Engineering Degree from <a href="http://www.unicen.edu.ar/">UNICEN University</a>, Tandil, Argentina. In May 2016, I defended my <a href="https://tel.archives-ouvertes.fr/tel-01349640/document">PhD thesis</a> in Computer Sciences, at the <a href="https://www.universite-paris-saclay.fr/en">Université Paris-Saclay</a> (<a href="http://www.ecp.fr/">CentraleSupeléc</a> / <a href="http://www.inria.fr/en/">INRIA</a>) in France (Paris) where I worked on deformable registration of multimodal medical images, using graphical models and discrete optimization techniques, under the supervision of <a href="https://en.wikipedia.org/wiki/Nikos_Paragios">Prof. Nikos Paragios</a>. After that, until August 2017, I was a postdoc research associate at <a href="http://www.imperial.ac.uk/">Imperial College London</a> (<a href="https://biomedia.doc.ic.ac.uk/">BioMedIA</a> lab), under the supervision of <a href="http://wp.doc.ic.ac.uk/bglocker/">Prof. Ben Glocker</a> working on deep learning and brain image segmentation.
-<br><br>
-I have also worked at several research institutes around the world. In 2023, I was an invited professor for half a year at Université Paris-Saclay (<a href="https://www.centralesupelec.fr/">CentraleSupelec</a>) in Paris, France. In 2021, I received a <a href="https://us.fulbrightonline.org/" >Fulbright Fellowship</a> to visit the <a href="https://www.martinos.org/">A. Martinos Center for Biomedical Imaging</a> (Massachusetts General Hospital - Harvard Medical School) in Boston. In 2014, as PhD intern I spend 3 months working on shape understanding for the <a href="http://cvgl.stanford.edu/">Computer Vision and Geometry Lab </a> at <a href="http://stanford.edu/">Stanford University</a>, California, USA. During 2010, I was an intern at <a href="https://team.inria.fr/steep/">STEEP Team</a> (INRIA Grenoble, France) working on transport/land-use mathematical modeling. Before moving to Buenos Aires, I was a CONICET researcher at the Research Institute for Signals, Systems and Computational Intelligence, sinc(i), in Santa Fe, Argentina.
-</p>
-
-
- <p style="text-align:justify">
-<b>Contact email:</b>  eferrante (at) dc (dot) uba (dot) ar || ferrante.enzo (at) gmail (dot) com
-  </p>
-<hr>
-
-
-<p>
-  <img src="images/grupal.png" style="width:100%">
-  <p style="text-align:center; font-size:13px; line-height:100%;">
-    Our team: colleagues, friends, master and PhD students.
-  </p>
-</p>
-
-
-</section>
-</article>
-
-				<!-- Talks -->
-							<article id="talks" class="panel">
-								<header>
-									<h2>Video presentations and talks</h2>
-								</header>
-<section>
-		<hr>
-
-
-<h3>AI for Good Seminar</h3>
-<br>
-<p style="text-align:justify; font-size:15px;line-height:110%; ">
-  <b>November, 2021:</b> Invited talk about "Fairness of machine learning classifiers in medical image analysis" at the AI for Good series organized by International Telecommunication Union.
-</p>
-  <a href="https://aiforgood.itu.int/event/fairness-of-machine-learning-classifiers-in-medical-image-analysis/"><img src="images/AI4good.png" style="width: 600px"></a>
-<hr>
-        
-<h3>Responsible AI Seminar @ Technical University of Denmark</h3>
-<br>
-<p style="text-align:justify; font-size:15px;line-height:110%; ">
-  <b>November, 2021:</b> Invited talk at the Responsible AI Seminar organized by the Technical University of Denmark about fairness in machine learning for medical image analysis.
-</p>
-  <a href="https://www.youtube.com/watch?v=LxpaHGZh4bI"><img src="images/DTU2021.jpeg" style="width: 600px"></a>
-<hr>
-        
-<h3>Khipu 2021</h3>
-<br>
-<p style="text-align:justify; font-size:15px;line-height:110%; ">
-  <b>May, 2021:</b> Invited talk at Khipu 2021 about self-supervised learning in biomedical image analysis, toghether with <b>Yann Lecun and Sandra Avila</b>.
-</p>
-  <a href="https://www.crowdcast.io/e/z1lnwaq6"><img src="images/Khipu2021.png" style="width: 600px"></a>
-<hr>
-
-<h3>Stanford AIMI Journal Club</h3>
-<br>
-<p style="text-align:justify; font-size:15px;line-height:110%; ">
-  <b>August, 2020:</b> Invited talk about our paper "Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis"
-</p>
-  <iframe width="600" height="315" src="https://www.youtube.com/embed/WlaNwspSOgk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<hr>
-
-<h3>MINDS & CIS Seminar, Johns Hopkins University</h3>
-<br>
-<p style="text-align:justify; font-size:15px;line-height:110%; ">
-  <b>September, 2020:</b> Invited talk at the seminar organized by the <a href="http://cis.jhu.edu/">Center for Imaging Science (CIS)</a> and the <a href="https://www.minds.jhu.edu/">Mathematical Institute for Data Science (MINDS)</a>, Johns Hopkins University. I presented our research line on anatomically plausible medical image segmentation, registration and reconstruction, featuring works from Lucas Mansilla, Agostina Larrazabal and Franco Matzkin.
-</p>
-  <a href="https://wse.zoom.us/rec/share/Yc5mjiSFwHpJDrN8VAdQxsDdcONMIb7X9tFKdcw_aUaLLWdqv33eQAO_yqIPI2n6.B02oHIlIjCj3RU4f?startTime=1598974826000"><img src="images/JohnsHopkins.png" style="width: 600px"></a>
-
-<hr>
-
-<h3>Giambiagi Winter School 2020</h3>
-<br>
-<p style="text-align:justify; font-size:15px;line-height:110%; ">
-  <b>August, 2020:</b> I gave an introductory course to convolutional neural networks at the <a href="http://giambiagi2020.df.uba.ar/">Giambiagi Winter School</a>, organized by the Physics Department of Universidad de Buenoa Aires, Argentina. Talk in spanish.
-</p>
-
-<b>Class 1:</b><br>
-
- <iframe width="560" height="315" src="https://www.youtube.com/embed/DBNzVMimdFo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  <br>
-<b>Class 2:</b><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZGoxCmsIDF0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<hr>
-<h3>Khipu 2019</h3>
-<br>
-<p style="text-align:justify; font-size:15px;line-height:110%; ">
-  <b>November, 2019:</b> I was invited as a plenary speaker to the <a href="https://khipu.ai/khipu2019/">1st Latin American meeting on Artificial Intelligence, Khipu 2019</a>, organized in Uruguay. My talk was an introduction to convolutional neural networks.
-</p>
-    <a href="https://tv.vera.com.uy/video/54701"><img src="images/Khipu2019.png" style="width: 600px"></a>
-
-
+<section id="news">
+  <h2>News</h2>
+  <p class="sub">Talks, papers and other updates. Scroll for older news.</p>
+  <!-- To add news: copy one <li> below and put it at the top of the list. Thumbnails go in images/news/. -->
+  <div class="newsbox">
+  <ul class="newslist">
+    <li><a class="nthumb" href="https://www.liaa.dc.uba.ar/el-liaa-en-miccai-2026/"><img src="images/news/shapemi.jpg" alt="" loading="lazy"></a><div><time>Sep 2026</time><p>Keynote at the <b>ShapeMI Workshop @ MICCAI 2026</b> (Strasbourg): “Learning Anatomically Plausible Shapes for Medical Image Segmentation with Hybrid Graph Neural Networks”. I also co-organized the 4th <b>FAIMI</b> workshop on fairness in medical imaging. <a href="https://www.liaa.dc.uba.ar/el-liaa-en-miccai-2026/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.youtube.com/watch?v=TMN83yS-cTI"><img src="images/news/enjambre.jpg" alt="" loading="lazy"></a><div><time>Sep 2026</time><p>Interview at <b>El Enjambre IA</b> about our work on algorithmic fairness (in Spanish). <a href="https://www.youtube.com/watch?v=TMN83yS-cTI"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.6 15.6V8.4l6.2 3.6z"/></svg>Watch on YouTube →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.youtube.com/watch?v=xpD7Y7WMmyo"><img src="images/news/panel-exactas.jpg" alt="" loading="lazy"></a><div><time>Sep 2026</time><p>I took part in the panel <b>“El impacto de la IA en la investigación científica”</b> organized by <b>Exactas UBA</b>, with researchers from the faculty (in Spanish). <a href="https://www.youtube.com/watch?v=xpD7Y7WMmyo"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.6 15.6V8.4l6.2 3.6z"/></svg>Watch on YouTube →</a></p></div></li>
+    <li><a class="nthumb" href="https://caim.meduniwien.ac.at/ueber-uns/events/caim-talk-may-15th-2026-enzo-ferrante-and-aarti-krishnan/"><img src="images/news/meduni.jpg" alt="" loading="lazy"></a><div><time>May 2026</time><p>CAIM Talk at the <b>Medical University of Vienna</b>: “Towards robust anatomical segmentation of medical images”. <a href="https://caim.meduniwien.ac.at/ueber-uns/events/caim-talk-may-15th-2026-enzo-ferrante-and-aarti-krishnan/">Read more →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://lme.tf.fau.de/news/guest-talk-announcement-enzo-ferrante-april-15th-2026-at-1400h/"><img src="images/news/fau-logo.png" alt="FAU Erlangen-Nürnberg" loading="lazy"></a><div><time>Apr 2026</time><p>Guest talk at the Pattern Recognition Lab, <b>FAU Erlangen-Nürnberg</b>: “Towards robust anatomical segmentation of medical images”. <a href="https://lme.tf.fau.de/news/guest-talk-announcement-enzo-ferrante-april-15th-2026-at-1400h/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/8365049fc3fe46cb5ebd648d58ba0933-Abstract-Conference.html"><img src="images/news/kaleidoscope.jpg" alt="" loading="lazy"></a><div><time>Apr 2026</time><p><b>Kaleidoscope</b>, our paper on in-language exams for massively multilingual vision evaluation, was published at <b>ICLR 2026</b>. <a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/8365049fc3fe46cb5ebd648d58ba0933-Abstract-Conference.html">Read more →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview/1239737/dr-enzo-ferrante"><img src="images/news/tum-logo.svg" alt="Technical University of Munich" loading="lazy"></a><div><time>Mar 2026</time><p>As part of the <b>Bessel Research Award</b> from the <b>Alexander von Humboldt Foundation</b>, I was a Humboldt Visiting Research Fellow at the <b>Technical University of Munich</b> (Chair of AI in Healthcare and Medicine), working on biases of vision-language models in healthcare. <a href="https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview/1239737/dr-enzo-ferrante">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://arxiv.org/abs/2602.21179"><img src="images/news/maskhybridgnet.jpg" alt="" loading="lazy"></a><div><time>Feb 2026</time><p>New preprint: <b>Mask-HybridGNet</b>, graph-based segmentation with emergent anatomical correspondence from pixel-level supervision. <a href="https://arxiv.org/abs/2602.21179">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.anthropic.com/news/ai-for-science-program"><img src="images/news/anthropic.jpg" alt="" loading="lazy"></a><div><time>2026</time><p>Our project entitled “Reconstructing regulatory pathways: agentic knowledge graph reasoning for putative crop lncRNAs under climate stress” was selected for <b>Anthropic</b>’s <b>AI for Science</b> Program, with 20,000 USD in API credits for our scientific projects. <a href="https://www.anthropic.com/news/ai-for-science-program">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.youtube.com/watch?v=PP_zcdSygPE"><img src="images/news/elcolectivo.jpg" alt="" loading="lazy"></a><div><time>Nov 2025</time><p>Interview on <i>El Colectivo</i> about our work on AI and health. <a href="https://www.youtube.com/watch?v=PP_zcdSygPE">Read more →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://exactas.uba.ar/enzo-ferrante-ganador-del-premio-bessel/"><img src="images/news/humboldt-logo.svg" alt="Alexander von Humboldt Foundation" loading="lazy"></a><div><time>Nov 2025</time><p>I received the <b>Friedrich Wilhelm Bessel Research Award</b> from the <b>Alexander von Humboldt Foundation</b> (Germany). <a href="https://exactas.uba.ar/enzo-ferrante-ganador-del-premio-bessel/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.youtube.com/watch?v=cSoYLx--2h4"><img src="images/news/datasets-lookingglass.jpg" alt="" loading="lazy"></a><div><time>Nov 2025</time><p>Guest in <b>Datasets through the Looking Glass</b> (season 4, episode 3). <a href="https://www.youtube.com/watch?v=cSoYLx--2h4"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.6 15.6V8.4l6.2 3.6z"/></svg>Watch on YouTube →</a></p></div></li>
+    <li><a class="nthumb" href="https://aclanthology.org/2025.acl-long.919"><img src="images/news/globalmmlu.jpg" alt="" loading="lazy"></a><div><time>Jul 2025</time><p><b>Global MMLU</b>, on cultural and linguistic biases in multilingual evaluation, published at <b>ACL 2025</b>. <a href="https://aclanthology.org/2025.acl-long.919">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://arxiv.org/abs/2501.14551"><img src="images/news/facct2025.jpg" alt="" loading="lazy"></a><div><time>Jun 2025</time><p>Our paper on the fairness of deep ensembles and its interplay with per-group task difficulty was presented at <b>ACM FAccT 2025</b>. <a href="https://arxiv.org/abs/2501.14551">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.youtube.com/watch?v=BlZ4XED1syk"><img src="images/news/future-ai-webinar.jpg" alt="" loading="lazy"></a><div><time>Jun 2025</time><p>I gave the <b>FUTURE-AI Webinar #3</b>, organized by the FUTURE-AI network. <a href="https://www.youtube.com/watch?v=BlZ4XED1syk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.6 15.6V8.4l6.2 3.6z"/></svg>Watch on YouTube →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://raeng.org.uk/programmes-and-prizes/programmes/international-programmes/distinguished-international-associates/awardees/"><img src="images/news/raeng.jpg" alt="" loading="lazy"></a><div><time>Mar 2025</time><p>Named <b>Distinguished International Associate</b> of the <b>Royal Academy of Engineering</b> (UK). <a href="https://raeng.org.uk/programmes-and-prizes/programmes/international-programmes/distinguished-international-associates/awardees/">Read more →</a></p></div></li>
+    <li><a class="nthumb logo" style="background:#F15A24;border-color:#F15A24;padding:0" href="https://imfd.cl/en/khipu-2025-fue-la-fiesta-latinoamericana-de-la-inteligencia-artificial/"><img src="images/news/khipu-logo.jpg" alt="Khipu" loading="lazy" style="background:#F15A24"></a><div><time>Mar 2025</time><p>I participated as one of the co-organizers of <b>Khipu 2025</b>, the Latin American Meeting in Artificial Intelligence, held in Santiago, Chile. <a href="https://imfd.cl/en/khipu-2025-fue-la-fiesta-latinoamericana-de-la-inteligencia-artificial/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://pubmed.ncbi.nlm.nih.gov/39909534/"><img src="images/news/futureai-bmj.jpg" alt="" loading="lazy"></a><div><time>Feb 2025</time><p>I participated in the <b>FUTURE-AI</b> consortium guideline for trustworthy and deployable AI in healthcare, published in <b>The BMJ</b>. <a href="https://pubmed.ncbi.nlm.nih.gov/39909534/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.youtube.com/watch?v=j_y6by3XKSk"><img src="images/news/lab-ep01.jpg" alt="" loading="lazy"></a><div><time>Nov 2024</time><p>Interview in the first episode of <b>LAB (Laboratorio de Ideas)</b> (in Spanish). <a href="https://www.youtube.com/watch?v=j_y6by3XKSk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.6 15.6V8.4l6.2 3.6z"/></svg>Watch on YouTube →</a></p></div></li>
+    <li><a class="nthumb" href="https://arxiv.org/abs/2407.01996"><img src="images/news/vigbias.jpg" alt="" loading="lazy"></a><div><time>Sep 2024</time><p><b>ViG-Bias</b>, visually grounded bias discovery and mitigation, presented at <b>ECCV 2024</b>. <a href="https://arxiv.org/abs/2407.01996">Read more →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://lcd.exactas.uba.ar/datame-las-charlas-de-lcd-enzo-ferrante-viernes-28-6-16hs/"><img src="images/news/datame-logo.png" alt="" loading="lazy"></a><div><time>Jun 2024</time><p>Talk at <b>Dátame!</b>, the LCD talks at <b>Universidad de Buenos Aires</b>: “De AlexNet a ChatGPT” (in Spanish). <a href="https://lcd.exactas.uba.ar/datame-las-charlas-de-lcd-enzo-ferrante-viernes-28-6-16hs/">Event page →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.nature.com/articles/s41597-024-03358-1"><img src="images/news/chexmask.jpg" alt="" loading="lazy"></a><div><time>May 2024</time><p><b>CheXmask</b>, a large-scale dataset of anatomical segmentation masks for chest X-ray images, published in <b>Scientific Data</b>. <a href="https://www.nature.com/articles/s41597-024-03358-1">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.i-health.cl/events/seminar-may-14th-2024"><img src="images/news/ihealth.jpg" alt="" loading="lazy"></a><div><time>May 2024</time><p>Invited seminar at <b>iHEALTH</b>, <b>Pontificia Universidad Católica de Chile</b>, on fairness in machine learning for medical image analysis (in Spanish). <a href="https://www.i-health.cl/events/seminar-may-14th-2024">Event page →</a></p></div></li>
+    <li><a class="nthumb" href="https://medicalxpress.com/news/2024-03-ai-unprecedented-insight-heart-genetics.html"><img src="images/news/nmi2024.jpg" alt="Nature Machine Intelligence, March 2024 cover" loading="lazy" style="object-position:center 55%"></a><div><time>Mar 2024</time><p>Our work on unsupervised phenotyping of heart morphology and genes, led by Rodrigo Bonazzola and Alejandro Frangi, was published in <b>Nature Machine Intelligence</b>. <a href="https://medicalxpress.com/news/2024-03-ai-unprecedented-insight-heart-genetics.html">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://creators.spotify.com/pod/profile/anirban-mukhopadhyay7/episodes/Enzo-Ferrante-Fairness-in-Medical-AI-e2gkfqh"><img src="images/news/podcast-aiready.jpg" alt="" loading="lazy"></a><div><time>Mar 2024</time><p>Guest in the <b>AI-ready Healthcare</b> podcast, talking about fairness in medical AI. <a href="https://creators.spotify.com/pod/profile/anirban-mukhopadhyay7/episodes/Enzo-Ferrante-Fairness-in-Medical-AI-e2gkfqh"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#1DB954" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Listen on Spotify →</a></p></div></li>
+    <li><span class="nthumb logo"><img src="images/news/google-logo.svg" alt="Google" loading="lazy"></span><div><time>2024</time><p>Our project <b>“Leveraging VLMs to Detect and Explain Hidden Biases in Image-Based Systems”</b> was funded by the <b>Googler Initiated Grants Program</b> of <b>Google</b> (2024–2025).</p></div></li>
+    <li><a class="nthumb logo" href="https://www.dataia.eu/en/events/dataia-seminar-enzo-ferrante-improving-anatomical-plausibility-and-auditing-fairness-deep"><img src="images/news/paris-saclay-logo.svg" alt="Université Paris-Saclay" loading="lazy"></a><div><time>Oct 2023</time><p>Invited professor at <b>Université Paris-Saclay</b> (<b>CentraleSupélec</b>) for 2023–2024, funded by the <b>DATAIA Institute</b>. <a href="https://www.dataia.eu/en/events/dataia-seminar-enzo-ferrante-improving-anatomical-plausibility-and-auditing-fairness-deep">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.youtube.com/watch?v=EPekvlfJ6g0"><img src="images/news/dataia-seminar.jpg" alt="" loading="lazy"></a><div><time>Oct 2023</time><p><b>DATAIA Seminar</b> at <b>Université Paris-Saclay</b>: improving anatomical plausibility and auditing fairness in deep segmentation networks. <a href="https://www.youtube.com/watch?v=EPekvlfJ6g0"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.6 15.6V8.4l6.2 3.6z"/></svg>Watch on YouTube →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.lanacion.com.ar/tecnologia/google-destaco-un-proyecto-argentino-que-busca-sesgos-en-inteligencia-artificial-aplicada-a-la-nid10082023/"><img src="images/news/lanacion2023.jpg" alt="" loading="lazy"></a><div><time>Aug 2023</time><p>Our project funded by the <b>Google AIR</b> program on biases in AI for medical imaging was featured by <i>La Nación</i>. <a href="https://www.lanacion.com.ar/tecnologia/google-destaco-un-proyecto-argentino-que-busca-sesgos-en-inteligencia-artificial-aplicada-a-la-nid10082023/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.youtube.com/watch?v=KWISUFrNJXY"><img src="images/news/desde-conocimiento.jpg" alt="" loading="lazy"></a><div><time>Aug 2023</time><p>Interview on <b>Desde el Conocimiento</b> about AI to predict health diagnoses (in Spanish). <a href="https://www.youtube.com/watch?v=KWISUFrNJXY"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.6 15.6V8.4l6.2 3.6z"/></svg>Watch on YouTube →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://rsipvision.com/ComputerVisionNews-2023June/32/"><img src="images/news/ipmi2023-logo.png" alt="IPMI 2023" loading="lazy"></a><div><time>Jun 2023</time><p>I was Local Co-Chair of <b>IPMI 2023</b>, the Information Processing in Medical Imaging conference held in Bariloche, Argentina. <a href="https://rsipvision.com/ComputerVisionNews-2023June/32/">Read more →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://conferences.imt-atlantique.fr/ieeess/index.php?pid=14"><img src="images/news/ieee-embs-logo.png" alt="" loading="lazy"></a><div><time>Apr 2023</time><p>Lectures on advanced deep learning for medical imaging at the <b>IEEE EMBS Summer School on Biomedical Imaging</b>, Cartagena. <a href="https://conferences.imt-atlantique.fr/ieeess/index.php?pid=14">Event page →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://www.aicentre.dk/events/pioneer-centre-for-ai-talk-by-enzo-ferrante-fairness-of-machine-learning-in-medical-image-analysis"><img src="images/news/pioneer-logo.svg" alt="" loading="lazy"></a><div><time>Nov 2022</time><p>Seminar at the <b>Pioneer Centre for AI</b>, Copenhagen: fairness of machine learning in medical image analysis. <a href="https://www.aicentre.dk/events/pioneer-centre-for-ai-talk-by-enzo-ferrante-fairness-of-machine-learning-in-medical-image-analysis">Event page →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.nature.com/articles/s41467-022-32186-3"><img src="images/news/natcomm2022.jpg" alt="" loading="lazy"></a><div><time>Aug 2022</time><p>Our perspective <b>Addressing fairness in artificial intelligence for medical imaging</b> was published in <b>Nature Communications</b> (with M. A. Ricci Lara and R. Echeveste). <a href="https://www.nature.com/articles/s41467-022-32186-3">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://aiforgood.itu.int/event/ai-enabled-public-health-from-a-marginalized-perspective/"><img src="images/news/ai4good2021.jpg" alt="" loading="lazy"></a><div><time>Jan 2022</time><p>I was invited to moderate the presentation given by Lelia Marie Hampton at the <b>AI for Good</b> talk series about “AI enabled public health from a marginalized perspective”. <a href="https://aiforgood.itu.int/event/ai-enabled-public-health-from-a-marginalized-perspective/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://open.spotify.com/episode/0qFQbMdUoGmqiEfBYbO7yk"><img src="images/news/tn-podcast.jpg" alt="" loading="lazy"></a><div><time>Jan 2022</time><p>Guest in the TN Podcast <b>Se tildó</b>: “El algoritmo nos discrimina” (in Spanish). <a href="https://open.spotify.com/episode/0qFQbMdUoGmqiEfBYbO7yk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#1DB954" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Listen on Spotify →</a></p></div></li>
+    <li><a class="nthumb" href="https://research.google/programs-and-events/past-programs/award-for-inclusion-research-program/"><img src="images/news/google.jpg" alt="" loading="lazy"></a><div><time>2022</time><p>I received the <b>Google Award for Inclusion Research</b> for our project on bias discovery in medical imaging models. <a href="https://research.google/programs-and-events/past-programs/award-for-inclusion-research-program/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://bibliotecavirtual.unl.edu.ar/bitstream/handle/11185/6682/VERA_kuaa_Ferrante_AA.pdf?sequence=1&amp;isAllowed=y"><img src="images/news/book-aprendizaje-automagico.jpg" alt="Book cover" loading="lazy" style="object-position:center 25%"></a><div><time>2022</time><p>Our book <b>¿Aprendizaje automágico? Un viaje al corazón de la inteligencia artificial contemporánea</b>, directed by me and written with Laura Alonso Alemany, Diego Fernandez Slezak, Luciana Ferrer, Diego Milone and Georgina Stegmayer, was published by <b>Vera Cartonera</b> (<b>Universidad Nacional del Litoral</b>) (in Spanish). <a href="https://bibliotecavirtual.unl.edu.ar/bitstream/handle/11185/6682/VERA_kuaa_Ferrante_AA.pdf?sequence=1&amp;isAllowed=y">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://aiforgood.itu.int/event/fairness-of-machine-learning-classifiers-in-medical-image-analysis/"><img src="images/news/ai4good2021.jpg" alt="" loading="lazy"></a><div><time>Dec 2021</time><p>On December 6th I gave a seminar at the <b>AI for Good</b> series organized by the <b>International Telecommunication Union (ITU, United Nations)</b>: “Fairness of machine learning classifiers in medical image analysis”. <a href="https://aiforgood.itu.int/event/fairness-of-machine-learning-classifiers-in-medical-image-analysis/">Read more →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://www.ciecti.org.ar/arphai-impulsa-la-desbinarizacion-de-la-historia-clinica-electronica-argentina/"><img src="images/news/ciecti.jpg" alt="" loading="lazy"></a><div><time>Dec 2021</time><p>Our work at <b>ARPH.AI</b> on the de-binarization of gender identity in Argentina’s Electronic Health Record System was featured by the Global South AI for COVID program. <a href="https://www.ciecti.org.ar/arphai-impulsa-la-desbinarizacion-de-la-historia-clinica-electronica-argentina/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.youtube.com/watch?v=LxpaHGZh4bI"><img src="images/news/dtu2021.jpg" alt="" loading="lazy"></a><div><time>Nov 2021</time><p>Invited seminar at the Responsible AI Seminar organized by the <b>Technical University of Denmark (DTU)</b>: “Gender bias in X-ray classifiers for computer-assisted diagnosis”. <a href="https://www.youtube.com/watch?v=LxpaHGZh4bI">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://arxiv.org/abs/2108.01621"><img src="images/news/iccv2021.jpg" alt="" loading="lazy"></a><div><time>Jul 2021</time><p>Our paper <b>Domain Generalization via Gradient Surgery</b> was accepted at <b>ICCV 2021</b>. <a href="https://arxiv.org/abs/2108.01621">Read more →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://www.miccai2021.org/en/MICCAI-2021-OUTSTANDING-REVIEWER-AWARDS.html"><img src="images/news/miccai2021.jpg" alt="" loading="lazy"></a><div><time>Jul 2021</time><p>I received the Honorable Mention Reviewer Award for <b>MICCAI 2021</b>. <a href="https://www.miccai2021.org/en/MICCAI-2021-OUTSTANDING-REVIEWER-AWARDS.html">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.martinos.org/"><img src="images/news/martinos.jpg" alt="" loading="lazy"></a><div><time>Jul 2021</time><p>I joined the <b>A. Martinos Center for Biomedical Imaging</b> (<b>Massachusetts General Hospital</b>, <b>Harvard Medical School</b>) in Boston as a <b>Fulbright</b> Visiting Researcher, working with Juan Eugenio Iglesias, Adrian Dalca and Bruce Fischl. <a href="https://www.martinos.org/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://arxiv.org/abs/2106.09832"><img src="images/news/hybridgnet.jpg" alt="" loading="lazy"></a><div><time>Jun 2021</time><p><b>HybridGNet</b>, hybrid graph convolutional networks for landmark-based anatomical segmentation, accepted at <b>MICCAI 2021</b> (with N. Gaggion, L. Mansilla and D. Milone). <a href="https://arxiv.org/abs/2106.09832">Read more →</a></p></div></li>
+    <li><a class="nthumb logo" style="background:#04356b;border-color:#04356b;padding:0" href="http://cvpr2021.thecvf.com/node/184"><img src="images/news/cvpr2021.jpg" alt="CVPR 2021" loading="lazy" style="background:#04356b"></a><div><time>May 2021</time><p>I received the Outstanding Reviewer Award for <b>CVPR 2021</b>. <a href="http://cvpr2021.thecvf.com/node/184">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://arxiv.org/abs/2105.10827"><img src="images/news/orthogonal2021.jpg" alt="" loading="lazy"></a><div><time>May 2021</time><p>Our work <b>Orthogonal Ensemble Networks for Biomedical Image Segmentation</b> was early accepted at <b>MICCAI 2021</b> (with A. Larrazabal, C. Martinez and J. Dolz). <a href="https://arxiv.org/abs/2105.10827">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.crowdcast.io/e/z1lnwaq6"><img src="images/news/khipu2021.jpg" alt="" loading="lazy"></a><div><time>May 2021</time><p>Invited keynote speaker at <b>Khipu 2021</b>: self-supervised learning in biomedical image analysis, together with Yann LeCun and Sandra Avila. <a href="https://www.crowdcast.io/e/z1lnwaq6"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.6 15.6V8.4l6.2 3.6z"/></svg>Watch recording →</a></p></div></li>
+    <li><a class="nthumb" href="https://researchparasite.com/"><img src="images/news/pnas2020.jpg" alt="" loading="lazy"></a><div><time>Jan 2021</time><p>Nicolás Nieto was awarded the Junior Research Parasite Award for our work on gender imbalance in medical imaging datasets, published in <b>PNAS</b>. <a href="https://researchparasite.com/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2020/12/mcti-e-cnpq-entregam-premiacao-a-vencedores-do-premio-mercosul-de-ciencia-e-tecnologia"><img src="images/news/mercosur-photo.jpg" alt="" loading="lazy"></a><div><time>Dec 2020</time><p>I was awarded the <b>Mercosur Science and Technology Award</b> in the topic of Artificial Intelligence. <a href="https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2020/12/mcti-e-cnpq-entregam-premiacao-a-vencedores-do-premio-mercosul-de-ciencia-e-tecnologia">Read more →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://royalsociety.org/"><img src="images/news/royalsociety.jpg" alt="" loading="lazy"></a><div><time>Nov 2020</time><p>We received an International Exchanges Grant from the <b>Royal Society</b> (UK) to support our project on Imaging Genetics with Alex Frangi and Rodrigo Bonazzola (<b>University of Leeds</b>). <a href="https://royalsociety.org/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.rsipvision.com/ComputerVisionNews-2020November/"><img src="images/news/cvn2020.jpg" alt="" loading="lazy"></a><div><time>Nov 2020</time><p><b>Computer Vision News</b> featured an interview with Franco Matzkin, one of my PhD students, about our <b>MICCAI</b> and <b>AutoImplant Challenge</b> papers on skull reconstruction. <a href="https://www.rsipvision.com/ComputerVisionNews-2020November/">Read more →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://santafe.conicet.gov.ar/premio-estimulo-ancefn-enzo-errante-sinci/"><img src="images/news/ancefn.jpg" alt="" loading="lazy"></a><div><time>Oct 2020</time><p>I received the Young Investigator Award from the <b>National Academy of Exact, Physical and Natural Sciences of Argentina</b>. <a href="https://santafe.conicet.gov.ar/premio-estimulo-ancefn-enzo-errante-sinci/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://arxiv.org/pdf/2009.13704.pdf"><img src="images/news/autoimplant2020.jpg" alt="" loading="lazy"></a><div><time>Oct 2020</time><p>Our work <b>Cranial Implant Design via Virtual Craniectomy with Shape Priors</b> (with F. Matzkin, V. Newcombe and B. Glocker) received a Best Paper Award at the <b>MICCAI AutoImplant Workshop 2020</b>. <a href="https://arxiv.org/pdf/2009.13704.pdf">Read more →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://grail-miccai.github.io/"><img src="images/news/grail.jpg" alt="" loading="lazy"></a><div><time>Oct 2020</time><p>I co-organized the 3rd International Workshop on Graphs in Biomedical Image Analysis (<b>GRAIL</b>) at <b>MICCAI 2020</b>. <a href="https://grail-miccai.github.io/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://arxiv.org/abs/2009.04985"><img src="images/news/sipaim2020.jpg" alt="" loading="lazy"></a><div><time>Oct 2020</time><p>Julian Palladino presented our work on unsupervised domain adaptation via CycleGAN for white matter hyperintensity segmentation at <b>SIPAIM 2020</b>. <a href="https://arxiv.org/abs/2009.04985">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://wse.zoom.us/rec/share/Yc5mjiSFwHpJDrN8VAdQxsDdcONMIb7X9tFKdcw_aUaLLWdqv33eQAO_yqIPI2n6.B02oHIlIjCj3RU4f?startTime=1598974826000"><img src="images/news/jhu2020.jpg" alt="" loading="lazy"></a><div><time>Sep 2020</time><p>Invited talk at the seminar of the <b>Center for Imaging Science (CIS)</b> and the <b>Mathematical Institute for Data Science (MINDS)</b>, <b>Johns Hopkins University</b>, on anatomically plausible medical image processing. <a href="https://wse.zoom.us/rec/share/Yc5mjiSFwHpJDrN8VAdQxsDdcONMIb7X9tFKdcw_aUaLLWdqv33eQAO_yqIPI2n6.B02oHIlIjCj3RU4f?startTime=1598974826000"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.6 15.6V8.4l6.2 3.6z"/></svg>Watch recording →</a></p></div></li>
+    <li><a class="nthumb logo" href="https://www.youtube.com/watch?v=WlaNwspSOgk"><img src="images/news/stanford-logo.svg" alt="Stanford University" loading="lazy"></a><div><time>Aug 2020</time><p>Invited to present our <b>PNAS</b> work on gender imbalance in medical imaging datasets at the <b>Stanford AIMI Journal Club</b>. <a href="https://www.youtube.com/watch?v=WlaNwspSOgk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.6 15.6V8.4l6.2 3.6z"/></svg>Watch on YouTube →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.statnews.com/2020/05/25/ai-systems-training-data-sex-bias/"><img src="images/news/pnas2020.jpg" alt="" loading="lazy"></a><div><time>May 2020</time><p>Our article on gender imbalance in medical imaging datasets was published in <b>PNAS</b> and featured by <b>STAT News</b>. <a href="https://www.statnews.com/2020/05/25/ai-systems-training-data-sex-bias/">Read more →</a></p></div></li>
+    <li><a class="nthumb" href="https://www.youtube.com/watch?v=9TWz1NYBOss"><img src="images/news/khipu2019.jpg" alt="" loading="lazy"></a><div><time>Nov 2019</time><p>Plenary talk at <b>Khipu 2019</b> in Montevideo: introduction to convolutional neural networks. <a href="https://www.youtube.com/watch?v=9TWz1NYBOss"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.6 15.6V8.4l6.2 3.6z"/></svg>Watch on YouTube →</a></p></div></li>
+  </ul>
+  </div>
 </section>
 
-</article>
-						<!-- Work -->
-
-<article id="publications" class="panel">
-	<header>
-		<h1>Publications</h1>
-		<span style="font-size:small"> I'm including a list of selected publications, for a full list see my <a href="https://scholar.google.fr/citations?user=ArqlkTUAAAAJ&hl=en&oi=ao">Google Scholar Profile</a>. If you have troubles to access them, please email me. </span>
-	</header>
-	<ul>
-
-
-</li>
-<hr>
-
-<li><img class="thumb" src="images/thumbnails/ICCV2021.png"> <div class="text_publications"><a href="https://arxiv.org/abs/2108.01621">Domain Generalization via Gradient Surgery</a><br>
-<span style="font-size:small"> [<a href="https://arxiv.org/abs/2108.01621">ICCV 2021 (ArXiv Version)</a>]</span> <br>
-    L Mansilla, R Echeveste, DH Milone, <span class="author">E Ferrante</span><br> ICCV 2021
-
-</div>
-    
-</li>
-
-<hr>
-
-<li><img class="thumb" src="images/thumbnails/MICCAI2021hybrid.png"> <div class="text_publications"><a href="https://arxiv.org/abs/2106.09832">Hybrid graph convolutional neural networks for landmark-based anatomical segmentation</a><br>
-<span style="font-size:small"> [<a href="https://arxiv.org/abs/2106.09832">MICCAI 2021 (ArXiv version)</a>]</span> <br>
-    N Gaggion, L Mansilla, DH Milone, <span class="author">E Ferrante</span><br> MICCAI 2021
-
-</div>
-</li>
-
-<hr>
-
-<li><img class="thumb" src="images/thumbnails/MICCAI2021orthogonal.png"> <div class="text_publications"><a href="https://arxiv.org/abs/2105.10827">Orthogonal Ensemble Networks for Biomedical Image Segmentation</a><br>
-<span style="font-size:small"> [<a href="https://arxiv.org/abs/2105.10827">MICCAI 2021 (ArXiv version)</a>]</span> <br>
-    A Larrazabal, C Martinez, J Dolz, <span class="author">E Ferrante</span><br> MICCAI 2021
-
-</div>
-</li>
-
-<hr>
-
-<li><img class="thumb" src="images/thumbnails/Gigascience2021.png"> <div class="text_publications"><a href="https://academic.oup.com/gigascience/article/10/7/giab052/6324285?login=true">ChronoRoot: High-throughput phenotyping by deep segmentation networks reveals novel temporal parameters of plant root system architecture</a><br>
-<span style="font-size:small"> [<a href="https://academic.oup.com/gigascience/article/10/7/giab052/6324285?login=true">GigaScience</a>]</span> <br>
-    N Gaggion, L Mansilla, DH Milone, <span class="author">E Ferrante</span><br> GigaScience (2021) https://doi.org/10.1093/gigascience/giab052
-
-</div>
-</li>
-
-		<hr>
-
-    <li><img class="thumb" src="images/thumbnails/PNAS2020.png"> <div class="text_publications"><a href="https://www.pnas.org/content/early/2020/05/19/1919012117.short">Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis</a><br>
-<span style="font-size:small"> [<a href="https://www.pnas.org/content/early/2020/05/19/1919012117.short">PNAS</a>]</span> <br>
-			AJ Larrazabal, N Nieto, V Peterson, DH Milone, <span class="author">E Ferrante</span><br> Proceedings of the Natural Academy of Sciences (PNAS, 2020)
-
-</div>
-</li>
-
-    <hr>
-
-    <li><img class="thumb" src="images/thumbnails/LANCET2020.jpg"> <div class="text_publications"><a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30085-6/fulltext">Multiclass semantic segmentation and quantification of traumatic brain injury lesions on head CT using deep learning: an algorithm development and multicentre validation study</a><br>
-<span style="font-size:small"> [<a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30085-6/fulltext">The Lancet DH</a>]</span> <br>
-			M Monteiro, VFJ Newcombe, F Mathieu, K Adatia, K Kamnitsas, <span class="author">E Ferrante</span>, T Das, D Whitehouse, D Rueckert, DK Menon, B Glocker<br> The Lancet Digitial Health (The Lancet, Elsevier, 2020)
-
-</div>
-</li>
-
-		<hr>
-
-  <li><img class="thumb" src="images/thumbnails/NeuralNetworks2020.png"> <div class="text_publications"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0893608020300253">Learning deformable registration of medical images with anatomical constraints</a><br>
-<span style="font-size:small"> [<a href="https://arxiv.org/pdf/2001.07183.pdf">ArXiV</a>] [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0893608020300253">Neural Networks (Elsevier)</a>]</span> <br>
-			Mansilla L, Milone D, <span class="author"> Ferrante E</span><br> Neural Networks (Elsevier, 2020)
-
-</div>
-</li>
-  <hr>
-
-<li><img class="thumb" src="images/thumbnails/MICCAI2020.png"> <div class="text_publications"><a href="https://link.springer.com/chapter/10.1007/978-3-030-59713-9_38">Self-supervised Skull Reconstruction in Brain CT Images with Decompressive Craniectomy</a><br>
-<span style="font-size:small"> [<a href="https://arxiv.org/pdf/2007.03817.pdf">ArXiv</a>]</span> <br>
-F Matzkin, V Newcombe, S Stevenson, A Khetani, T Newman, R Digby, A Stevens, B Glocker, <span class="author">E Ferrante</span><br> MICCAI 2020
-
-</div>
-</li>
-<hr>
-
-<li><img class="thumb" src="images/thumbnails/Autoimplant2020.png"> <div class="text_publications"><a href="https://link.springer.com/chapter/10.1007/978-3-030-64327-0_5">Cranial Implant Design via Virtual Craniectomy with Shape Priors
-</a><br>
-<span style="font-size:small"> [<a href="https://arxiv.org/abs/2009.13704">ArXiv</a>]</span> <br>
-F Matzkin, V Newcombe, B Glocker, <span class="author">E Ferrante</span><br> AutoImplant Challege 2020 (MICCAI 2020)<br>Received the Best Paper Award at AutoImplant Challenge.
-</div>
-</li>
-<hr>
-
-<li><img class="thumb" src="images/thumbnails/SIPAIM2020.png"> <div class="text_publications"><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11583/1158302/Unsupervised-domain-adaptation-via-CycleGAN-for-white-matter-hyperintensity-segmentation/10.1117/12.2579548.short?SSO=1">Unsupervised Domain Adaptation via CycleGAN for White Matter Hyperintensity Segmentation in Multicenter MR Images</a><br>
-<span style="font-size:small"> [<a href="https://arxiv.org/abs/2009.04985">ArXiv</a>]</span> <br>
-JA Palladino, DF Slezak, <span class="author">E Ferrante</span><br> SIPAIM 2020 (Jointly organized with MICCAI 2020)
-</div>
-</li>
-  <hr>
-<li><img class="thumb" src="images/thumbnails/MICCAI2019.png"> <div class="text_publications"><a href="https://www.springerprofessional.de/en/anatomical-priors-for-image-segmentation-via-post-processing-wit/17267386">Anatomical Priors for Image Segmentation via Post-Processing with Denoising Autoencoders</a><br>
-<span style="font-size:small"> [<a href="https://arxiv.org/abs/1906.02343">ArXiV</a>] [<a href="https://www.springerprofessional.de/en/anatomical-priors-for-image-segmentation-via-post-processing-wit/17267386">Springer LNCS</a>]</span> <br>
-			Larrazabal A, Martinez C, <span class="author"> Ferrante E</span><br>MICCAI 2019</div>
-</li>
-
-		<hr>
-<li><img class="thumb" src="images/thumbnails/MIDL2019.png"> <div class="text_publications"><a href="https://link.springer.com/chapter/10.1007/978-3-030-00919-9_34">Joint Learning of Brain Lesion and Anatomy Segmentation from Heterogeneous Dataset</a><br>
-<span style="font-size:small"> [<a href="http://proceedings.mlr.press/v102/roulet19a.html">PMLR</a>] [<a href="https://openreview.net/forum?id=Syest0rxlN">Open Reviews</a>] [<a href="https://arxiv.org/abs/1903.03445">ArXiv Version</a>]</span> <br>
-			Roulet N, Fernandes Slezak D,<span class="author"> Ferrante E</span><br> International Conference on Medical Imaging with Deep Learning (MIDL 2019)
-  <br>
-</div>
-</li>
-
-      <hr>
-
-    <li><img class="thumb" src="images/thumbnails/BRATS2019.png"> <div class="text_publications"><a href="https://link.springer.com/chapter/10.1007/978-3-030-46640-4_2">TBI Lesion Segmentation in Head CT: Impact of Preprocessing and Data Augmentation
-</a><br>
-<span style="font-size:small"> [<a href="https://www.doc.ic.ac.uk/~bglocker/pdfs/monteiro2019tbi.pdf">ArXiv</a>][<a href="https://link.springer.com/chapter/10.1007/978-3-030-46640-4_2">Springer LNCS</a>]</span> <br>
-			M Monteiro, K Kamnitsas, <span class="author"> Ferrante E</span>, F Mathieu, S McDonagh, S Cook, S Stevenson, T Das, A Khetani, T Newman, F Zeiler, R Digby, J P Coles, D Rueckert, DK Menon, VFJ Newcombe, B Glocker<br> BrainLess Workshop (MICCAI, 2019)
-
-</div>
-</li>
-
-        <hr>
-
-    <li><img class="thumb" src="images/thumbnails/SCIREP2019.png"> <div class="text_publications"><a href="https://www.nature.com/articles/s41598-019-48927-2">Hierarchical Template Matching for 3D Myocardial Tracking and Cardiac Strain Estimation</a><br>
-<span style="font-size:small"> [<a href="https://www.nature.com/articles/s41598-019-48927-2">Nature Scientific Reports</a>]</span> <br>
-			JM Bhalodiya, A Palit, <span class="author"> Ferrante E</span>, MK Tiwari, SK Bhudia, TN Arvanitis, MA Williams <br> Nature Scientific Reports (Nature Sci Rep, 2019)
-</div>
-</li>
-
-  <hr>
-
-	<li><img class="thumb" src="images/thumbnails/JBHI2018.png"> <div class="text_publications"><a href="https://ieeexplore.ieee.org/abstract/document/8458414">Weakly-Supervised Learning of Metric Aggregations for Deformable Image Registration
-</a><br>
-<span style="font-size:small">[<a href="https://arxiv.org/pdf/1809.09004.pdf">ArXiv Version</a>, <a href="https://ieeexplore.ieee.org/abstract/document/8458414">IEEE Version</a>]</span><br>
-			<span class="author"> Ferrante E</span>, K Dokania P, Marini Silva R, Paragios N <br> IEEE Journal of Biomedical and Health Informatics
- (2019, IEEE)
-<br>
-</div>
-</li>
-
-		<hr>
-
-<li><img class="thumb" src="images/thumbnails/MLMI2018.png"> <div class="text_publications"><a href="https://link.springer.com/chapter/10.1007/978-3-030-00919-9_34">On the Adaptability of Unsupervised CNN-Based Deformable Image Registration to Unseen Image Domains</a><br>
-<span style="font-size:small">[<a href="https://www.researchgate.net/profile/Enzo_Ferrante/publication/327673849_On_the_Adaptability_of_Unsupervised_CNN-Based_Deformable_Image_Registration_to_Unseen_Image_Domains/links/5ba8fa38299bf13e6049031f/On-the-Adaptability-of-Unsupervised-CNN-Based-Deformable-Image-Registration-to-Unseen-Image-Domains.pdf?origin=publication_detail">ReserachGate Version</a>]</span><br>
-			<span class="author"> Ferrante E</span>, Oktay O, Glocker B, Milone D<br> International Conference on Machine Learning in Medical Imaging (MLMI 2018, MICCAI 2018)
-<br>
-</div>
-</li>
-
-  <hr>
-
-	<li><img class="thumb" src="images/thumbnails/STACOM2018.png"> <div class="text_publications"><a href="https://arxiv.org/pdf/1808.07967.pdf">Left ventricle quantification through spatio-temporal CNNs</a><br>
-<span style="font-size:small">[<a href="https://arxiv.org/pdf/1808.07967.pdf">ArXiv Version</a>]</span><br>
-			A Debus, <span class="author"> Ferrante E</span> <br> Statistical Atlases and Computational Modelling of the Heart (STACOM 2018, MICCAI 2018)
-<br>
-</div>
-</li>
-
-
-<hr>
-
-<li><img class="thumb" src="images/thumbnails/MEDIA2018.jpg"> <div class="text_publications"><a href="https://www.sciencedirect.com/science/article/pii/S1361841518303554">Disease prediction using graph convolutional networks: Application to Autism Spectrum Disorder and Alzheimer’s disease</a><br>
-<span style="font-size:small">[<a href="https://github.com/parisots/population-gcn">Github Project and Code</a>]</span><br>
-			Parisot S, Ktena SI, <span class="author"> Ferrante E</span>, Lee M, Guerrerro R, Glocker B, Rueckert D <br> Medical Image Analysis
- (2018, IEEE)
-<br>
-</div>
-</li>
-<hr>
-
-<li><img class="thumb" src="images/thumbnails/GRAPHS2016.png"><div class="text_publications"><a href="https://link.springer.com/article/10.1007/s11263-017-1040-8">Graph Based Slice-to-Volume Deformable Registration</a><br>
-<span style="font-size:small">[<a href="https://www.researchgate.net/publication/283278147_Graph_Based_Slice-to-Volume_Deformable_Registration">ResearchGate Open Manuscript</a>, <a href="https://link.springer.com/article/10.1007/s11263-017-1040-8">Springer IJCV Publication</a>]</span><br>
-	<span class="author"> Ferrante E</span>, Paragios N<br> International Journal of Computer Vision (2018, Springer IJCV)<br></div></li>
-		<hr>
-
-	<li><img class="thumb" src="images/thumbnails/NEUROIMAGE2017.png"> <div class="text_publications"><a href="https://doi.org/10.1016/j.neuroimage.2017.12.052">Metric learning with spectral graph convolutions on brain connectivity networks</a><br>
-<span style="font-size:small">[<a href="https://github.com/sk1712/gcn_metric_learning">Github Project and Code</a>]</span><br>
-			Ktena SI, Parisot S, <span class="author"> Ferrante E</span>, Rajchl M, Lee M, Glocker B,Rueckert D <br> Neuroimage (2017, Elsevier)
-<br>
-</div>
-</li>
-		<hr>
-
-	<li><img class="thumb" src="images/thumbnails/BRATS2017.png"><div class="text_publications"><a href="https://arxiv.org/pdf/1711.01468.pdf">Ensembles of Multiple Models and Architectures
-for Robust Brain Tumour Segmentation</a><br>
-<span style="font-size:small;color:black">Method that achieved the 1st position in the competition (out of +50 participants). See press article in [<a href="https://biomedia.doc.ic.ac.uk/biomedia-wins-the-2017-brats-challenge/">English]</a> [<a href="http://ww.santafe-conicet.gov.ar/el-dr-enzo-ferrante-y-un-galardon-compartido/">Spanish</a>]<br>
-[<a href="https://arxiv.org/pdf/1711.01468.pdf">Arxiv Open Manuscript</a>]</span><br>
-	Kamnitsas K, Bai W*, <span class="author"> Ferrante E*</span>, McDonagh S*, Sinclair M*, Pawlowski N, Rajchl M, Lee M, Kainz B, Rueckert D, Glocker B
-<br> BRATS - The Multimodal Brain Tumor Segmentation Challenge (MICCAI 2017)</div></li>
-
-		<hr>
-	<li><img class="thumb" src="images/thumbnails/mlmi2017.png"><div class="text_publications"><a href="https://link.springer.com/chapter/10.1007/978-3-319-67389-9_30">Deformable Registration through Learning of Context-Specific Metric Aggregation</a><br>
-<span style="font-size:small">[<a href="https://arxiv.org/abs/1707.06263">Arxiv Open Manuscript</a>, <a href="https://link.springer.com/chapter/10.1007/978-3-319-67389-9_30">Springer LNCS Publication</a>]</span><br>
-	<span class="author"> Ferrante E</span>, Dokania KP, Marini R, Paragios N<br> Machine Learning in Medical Imaging. MLMI (MICCAI 2017)</div></li>
-
-		<hr>
-	<li><img class="thumb" src="images/thumbnails/TMI2017_Ozan.png"> <div class="text_publications"><a href="https://arxiv.org/abs/1705.08302">Anatomically Constrained Neural Networks (ACNN): Application to Cardiac Image Enhancement and Segmentation</a><br>
-	Oktay O, <span class="author"> Ferrante E</span>, Kamnitsas K, Heinrich M, Bai W, Caballero J, Guerrero R, Cook S, de Marvao A, O'Regan A, Kainz B, Glocker B, Rueckert D<br>In Press. IEEE Transactions on Medical Imaging (2017, IEEE TMI)</div></li>
-<hr>
-		<li><img class="thumb" src="images/thumbnails/MEDIA2017.png"> <div class="text_publications"><a href="http://www.sciencedirect.com/science/article/pii/S1361841517300701">Slice-to-volume medical image registration: a survey  </a><br>
-<span style="font-size:small">[<a href="https://arxiv.org/pdf/1702.01636">ArXiv Manuscript</a>, <a href="http://www.sciencedirect.com/science/article/pii/S1361841517300701">MedIA Publication</a>]</span><br>
-			<span class="author"> Ferrante E</span>, Paragios N <br>Medical Image Analysis (2017, Elsevier MedIA)</div></li>
-<hr>
-		<li><img class="thumb" src="images/thumbnails/MICCAI2017_Sarah.png"> <div class="text_publications"><a href="https://arxiv.org/pdf/1703.03020">Spectral Graph Convolutions for Population-based Disease Prediction</a><br>
-<span style="font-size:small">[<a href="https://github.com/parisots/population-gcn">Github Project and Code</a>]</span><br>
-			Parisot S, Ktena SI, <span class="author"> Ferrante E</span>, Lee M, Guerrerro R, Glocker B, Rueckert D<br> MICCAI 2017</div></li>
-<hr>
-
-		<li><img class="thumb" src="images/thumbnails/MICCAI2017_Ira.png"> <div class="text_publications"><a href="https://arxiv.org/pdf/1703.02161">Distance Metric Learning using Graph Convolutional Networks: Application to Functional Brain Networks</a><br>
-<span style="font-size:small">[<a href="https://github.com/sk1712/gcn_metric_learning">Github Project and Code</a>]</span><br>
-			Ktena SI, Parisot S, <span class="author"> Ferrante E</span>, Rajchl M, Lee M, Glocker B,Rueckert D<br> MICCAI 2017</div></li>
-<hr>
-		<li><img class="thumb" src="images/thumbnails/BRATS2016.png"> <div class="text_publications"><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2017/02/kamnitsas2016brats.pdf">DeepMedic for Brain Tumor Segmentation</a><br>
- 		   <span style="font-size:small"><a href="https://biomedia.doc.ic.ac.uk/software/deepmedic/">[Project website (code and downloads)]</a></span><br>
-			Kamnitsas K,  <span class="author"> Ferrante E</span>, Parisot S, Ledig C, Nori A, Criminisi A, Rueckert D, Glocker B <br>BRATS - The Multimodal Brain Tumor Segmentation Challenge (MICCAI 2016) </div></li>
-<hr>
-
-		<li><img class="thumb" src="images/thumbnails/BAMBI2016.png"> <div class="text_publications"><a href="http://128.84.21.199/abs/1608.05562">Rigid Slice-To-Volume Medical Image Registration through Markov Random Fields</a><br>
- 		   <span style="font-size:small"><a href="https://gitlab.com/franco.stramana1/slice-to-volume/tree/master">[Project website (code and downloads)]</a></span><br>
-			Porchetto R, Stramana F, Paragios N, <span class="author"> Ferrante E</span> <br>Bayesian and Graphical Models for Biomedical Imaging Workshop (MICCAI 2016) </div></li>
-<hr>
-
-		<li><img class="thumb" src="images/thumbnails/MEDIA2016.png"><div class="text_publications"> <a href="http://www.medicalimageanalysisjournal.com/article/S1361-8415(16)30106-2/abstract">(Hyper)-Graphical Models in Biomedical Image Analysis</a><br>
-			Paragios N, <span class="author"> Ferrante E</span>, Glocker B, Komodakis N, Parisot S, Zacharaki E <br> Medical Image Analysis  (2016, Elsevier MedIA) </div></li>
-<hr>
-		<li><img class="thumb" src="images/thumbnails/MICCAI2016.png"> <div class="text_publications"><a href="http://128.84.21.199/abs/1607.06787">Prior-based Coregistration and Cosegmentation</a><br>
-<span style="font-size:small"><a href="https://www.researchgate.net/publication/305615876_Prior-based_Coregistration_and_Cosegmentation#share">[ResearchGate]</a> <a href="http://128.84.21.199/abs/1607.06787">[ArXiv]</a> <a href="https://www.researchgate.net/profile/Enzo_Ferrante/publication/309583538_supplementary_material/links/58186cdc08ae90acb243bcdf.pdf">[Supplementary Material]</a></span><br>
-			Shakeri M*, <span class="author"> Ferrante E*</span>, Tskogkas S, Lippe S, Kadoury S, Kokkinos I,<br> Paragios N (* joint first author) <br> MICCAI 2016 </div></li>
-<hr>
-
-		<li><img class="thumb" src="images/thumbnails/ISBI2016.jpg"><a href="http://ieeexplore.ieee.org/document/7493261/">Sub cortical brain structure segmentation using F-CNN's</a><br>
- 		   <span style="font-size:small"><a href="http://arxiv.org/pdf/1602.02130">[ArXiv]</a><a href="https://github.com/tsogkas/brainseg">[Project website (code and downloads)]</a></span><br>
-		   *Shakeri M, *Tsogkas S, <span class="author"> Ferrante E</span>, Lippe S, Kadoury S, Paragios N, Kokkinos I <br>ISBI 2016, Czech Republic</li>
-		<hr>
-		<li><img class="thumb" src="images/thumbnails/ISBI2015.png"><div class="text_publications"><a href="https://hal.inria.fr/hal-01130724/document">Implicit Planar and In-Plane Deformable Mapping in Medical Images Through High Order Graphs </a><br>
-		   <span class="author"> Ferrante E</span>, Fecamp V, Paragios N<br> ISBI 2015 (Oral presentation), USA</div></li>
-<hr>
-
-		<li> <img class="thumb" src="images/thumbnails/IJCARS2015.png"> <div class="text_publications"><a href="http://link.springer.com/article/10.1007%2Fs11548-015-1205-2">Slice-to-Volume Deformable Registration: Efficient one shot consensus between plane selection and in-plane deformation </a> <span style="font-size:small"><a href="https://hal.inria.fr/hal-01118871v2/document">Download final draft in PDF</a> <br>
-		   </span>
-		   <span class="author"> Ferrante E</span>, Fecamp V, Paragios N<br> International Journal for Computer Assisted Radiology and Surgery (2015, Springer IJCARS)   </div></li>
-<hr>
-		<li> <img class="thumb" src="images/thumbnails/MICCAI2013.png"> <a href="https://hal.inria.fr/hal-00855662v1/document">Non-rigid 2D-3D Medical Image Registration using Markov Random Fields</a><br>
-		   <span class="author"> Ferrante E</span>, Fecamp V, Paragios N<br> MICCAI 2013, Japon </li>
-<hr>
-		<li> <img class="thumb" src="images/thumbnails/CAIS2013.png"> <div class="text_publications"><a href="https://dl.dropboxusercontent.com/u/6212117/papers/2013/PaperCAIS2013.pdf">Extracción de objetos en imágenes médicas tridimensionales basada en características texturales</a><br>  Manterola H L, Orlando J I, <span class="author">Ferrante E</span>, del Fresno M<br> Proceedings of CAIS 2013, 42nd JAIIO. Argentina</div></li>
-<hr>
-		<li><img class="thumb" src="images/thumbnails/WAVI2012.png"> <div class="text_publications"><a href="https://dl.dropbox.com/u/6212117/papers/2012/PaperWavi2012.pdf">Optimización de Atlas de Textura Utilizando Compactación de Polígonos por Simulación Física</a><br>
-		   Roo J S, D’Amato J P, <span class="author"> Ferrante E</span> <br> Proceedings of WAVi 2012. Argentina</div></li>
-<hr>
-		<li><img class="thumb" src="images/thumbnails/CAIS2012.png"><div class="text_publications"><a href="https://dl.dropbox.com/u/6212117/papers/2012/PaperCAIS2012.pdf">Un enfoque híbrido para la segmentación de tumores en MRI cerebrales</a><br>
-		    Orlando J I, <span class="author"> Ferrante E</span>, Manterola H L, del Fresno M.<br> Proceedings of CAIS 2012, 41st JAIIO. Argentina.</div></li>
-<hr>
-		<li><img class="thumb" src="images/thumbnails/WAVI2011.png"><div class="text_publications"><a href="http://dl.dropbox.com/u/6212117/papers/2011/WAVI2011.pdf">Plataforma para el desarrollo de aplicaciones interactivas y Videojuegos SATVD-T</a><br>
-		    <span class="author"> Ferrante, E</span>, García Bauza C, Segundo R M C, Vénere M. <br> Proceedings of WAVi 2011. Argentina. </div></li>
-<hr>
-		<li><img class="thumb" src="images/thumbnails/ENIEF2011.png"><div class="text_publications"><a href="http://dl.dropbox.com/u/6212117/papers/2011/ENIEF2011.pdf">Detección y reconstrucción de geometrías a partir de imágenes de resonancia magnética para seguimiento de tumores</a><br>
-<span class="author"> Ferrante E</span>, del Fresno M, D’Amato J, Vénere M. <br>Mecánica Computacional, Vol XXX. </div></li>
-<hr>
-		<li><img class="thumb" src="images/thumbnails/CAIS2011.png"><div class="text_publications"><a href="#">Segmentación de MRI aplicada al análisis de la evolución de tumores en series temporalmente espaciadas</a><br>
-<span class="author"> Ferrante E</span> del Fresno M, Escobar P, Massa, J. <br>Proceedings of CAIS 2011, 40th JAIIO. Argentina</div></li>
-<br>
-<br>
-
-	<h2>Computational Logic</h2>
-
-</br>
-<hr>
-	<ul>
-		<li><a href="http://isedj.org/2014-12/n6/ISEDJv12n6p15.html">Educational Software for First Order Logic Semantics in Introductory Logic Courses </a><br>
-		   Mauco V, <span class="author"> Ferrante E</span><br> Presented at ISECON 2013, USA. Published at Information Systems Education Journal.</li>
-<hr>
-		<li><a href="http://dl.dropbox.com/u/6212117/papers/2012/PaperICFCE2012.pdf">FOLST: A Didactic Tool to Support First Order Logic Semantics Learning </a><br>
-		   Mauco V, Maggiori E, Gervasoni L,<span class="author"> Ferrante E</span>, Felice L. <br> Proceedings of ICFCE 2012, China
-<br><a href="http://sourceforge.net/projects/folst/">[Project website]</a></li>
-<hr>
-		<li><a href="http://proc.isecon.org/2009/4142/index.html">Clausula: A Didactic Tool to Teach First Order Logic</a><br>
-		   Mauco V, <span class="author"> Ferrante E</span><br> Proceedings of ISECON 2009, USA <br>
-<a href="http://clausula.sourceforge.net/index.html">[Project Website]</a></li>
-<hr>
-		<li><a href="http://dl.dropboxusercontent.com/u/6212117/papers/2009/EST2009.pdf">Clausula: Herramienta Didáctica para la Enseñanza de Lógica de Predicados de Primer Orden</a><br>
-		   <span class="author"> Ferrante E</span><br> Proceedings of JAIIO EST 2009, Argentina
-
-</ul>
-
-    <h2>Books</h2>
-<hr>
-
-<ul>
-
-<li><img class="thumb" src="images/thumbnails/GRAIL2020.jpeg"><div class="text_publications"><a href="https://link.springer.com/book/10.1007/978-3-030-60365-6">Uncertainty for Safe Utilization of Machine Learning in Medical Imaging, and Graphs in Biomedical Image Analysis
-</a><br>
-		   Editors: CH Sudre, H Fehri, T Arbel, CF. Baumgartner, A Dalca, R Tanno, K Van Leemput, WM Wells, A Sotiras, B Papiez, <span class="author">E Ferrante</span>, S Parisot, AV. Dalca <br> Part of the Lectures Notes in Computer Sciences book series (Vol 12443) <br>Springer, 2020
-</div>
-  <br>
-</li>
-<li><img class="thumb" src="images/thumbnails/GRAIL2018.jpg"><div class="text_publications"><a href="https://link.springer.com/book/10.1007/978-3-030-00689-1">Graphs in Biomedical Image Analysis and Integrating Medical Imaging and Non-Imaging Modalities
-</a><br>
-		   Editors: D Stoyanov, Z Taylor, <span class="author">E Ferrante</span>, AV. Dalca et al.<br> Part of the Lectures Notes in Computer Sciences book series (Vol 11044) <br>Springer, 2018
-</div>
-</li>
-<br>
-<br>
-<li><img class="thumb" src="images/thumbnails/grail.jpg"><div class="text_publications"><a href="https://link.springer.com/book/10.1007%2F978-3-319-67675-3">Graphs in Biomedical Image Analysis, Computational Anatomy and Imaging Genetics</a><br>
-		   Editors: J Cardoso, T Arbel, <span class="author">E Ferrante</span>, X Pennec, A Dalca, S Parisot, S Joshi, N Batmanghelich, A Sotiras, M Nielsen, M Sabuncu, T Fletcher, L Shen, S Durrleman, S Sommer<br> Part of the Lectures Notes in Computer Sciences book series (Vol 10551) <br>Springer, 2017
-</div>
-</li>
-</ul>
-
-	<h2>PhD Thesis</h2>
-<hr>
-
-<ul>
-		<li><img class="thumb" src="images/thumbnails/THESIS2016.png"><div class="text_publications"><a href="https://tel.archives-ouvertes.fr/tel-01349640/document">Graph-based deformable registration: slice-to-volume mapping and context specific methods</a><br>
-		   <span class="author"> Ferrante E</span><br> Director: Nikos Paragios.<br> 2016
-</div></ul>
-<br>
-
-
-	<h2>Engineering Thesis</h2>
-<hr>
-
-<ul>
-		<li><img class="thumb" src="images/thumbnails/THESIS2012.png"><div class="text_publications"><a href="https://dl.dropboxusercontent.com/u/6212117/papers/2012/Tesis_FE_Final.pdf">Tesis de Grado: Segmentación y reconstrucción eficiente de mallas para seguimiento de tumores utilizando GPU.</a><br>
-		   <span class="author"> Ferrante E</span><br> Director: Del Fresno, M. Co-Director: D'Amato J P. <br>Tesis de Grado presentada para obtener el titulo de Ingeniero de Sistemas en la Facultad de Ciencias Exactas de la Universidad Nacional del Centro de la Provincia de Buenos Aires. 2012 </div>
-</ul>
-<br>
-
-<h2>Program Comittee Member / Organizer </h2>
-<hr>
-I've been part of the PC or organized the following conferences/workshops:
-<ul>
-
-<li><b>- <a href="https://miccai2020.org">MICCAI 2018, 2020</a> (International Conference on Medical Image Computing and Computer Assisted Intervention): Member of the program committee (Area Chair)</b></li>
-<li><b>- <a href="https://2020.midl.io/">MIDL 2020</a> (International Conference on Medical Imaging with Deep Learning): Member of the program committee (Area Chair)</b></li>
-<li><b>- <a href="https://sites.google.com/view/dart2020/">DART 2019, 2020</a> (Workshop on Domain Adaptation and Representation Transfer @ MICCAI): Member of the Program Committee</b></li>
-
-<li><b>- GRAIL <a href="https://biomedic.doc.ic.ac.uk/miccai17-grail/">2017</a>, <a href="https://grail-miccai.github.io">2018</a>,  <a href="https://grail-miccai.github.io">2020</a> @ MICCAI (Graphs in Biomedical Image
-Processing Workshop): Co-organizer</b></li>
-<li><b>- <a href="https://lld-workshop.github.io/">LDD 2017 @ NIPS, 2019 @ ICLR </a> (Learning with limited labeled data: weak supervision and beyond): Member of the Program Committee</b></li>
-
-<li><b>- <a href="http://48jaiio.sadio.org.ar/simposios/AGRANDA">AGRANDA 2019</a>Simposio Argentino de Ciencia de Datos y GRANdes DAtos: General Chair</b></li>
-<li><b>- <a href="https://sites.google.com/view/med-nips-2018/organization?authuser=0">MedNIPS 2018, 2019</a> (Medical Imaging meet NIPS Workshop @ NIPS 2018): Member of the program committee</b></li>
-</ul>
-
-<h2>Reviewing</h2>
-<hr>
-I've reviewed/I review for the following conferences and journals:
-<ul>
-<li><b>- Frontiers in Neuroscience</b></li>
-<li><b>- IEEE, Transactions on Medical Imaging (TMI)</b></li>
-<li><b>- Elsevier, NeuroImage</b></li>
-<li><b>- Elsevier, Medical Image Analysis (MedIA)</b></li>
-<li><b>- Elsevier, Computers in Biology and Medicine (CBM)</b></li>
-<li><b>- Elsevier, Computers Vision and Image Understanding (CVIU)</b></li>
-<li><b>- Elsevier, Computerized Medical Imaging and Graphics (CMIG)</b></li>
-<li><b>- Springer, International Journal for Computer Assisted Radiology and Surgery (IJCARS)</b></li>
-<li><b>- MICCAI 2016, 2017, 2019 (International Conference on Medical Image Computing and Computer Assisted Intervention)</b></li>
-<li><b>- SIPAIM 2016 (International Symposium on Medical Information Processing and Analysis)</b></li>
-<li><b>- CIARP 2015 (Iberoamerican Congress on Pattern Recognition)</b></li>
-<li><b>- ICVGIP 2014 (Indian Conference on Computer Vision, Graphics and Image Processing)</b></li>
-</ul>
-
-</article>
-						<!-- Teaching -->
-							<article id="teaching" class="panel">
-								<header>
-									<h2>Teaching</h2>
-								</header>
-<hr>
-
-<br>
-
-<h2>Courses</h2>
-<br>
-<ul>
-    <li><b><a href="https://campus.exactas.uba.ar/course/view.php?id=1435">February 2022: Visiting Professor in charge of “Deep learning for medical image analysis“</a></b><br> Universidad de la República, Uruguay </li>
-    <li><b><a href="https://udesa.edu.ar/departamento-de-matematica-y-ciencias/maestria-en-ciencia-de-datos">2021 - To date: Professor in charge of “Introduction to Neural Networks“</a></b><br> Universidad de San Andres, Argentina </li>
-<li><b><a href="https://www.utdt.edu/ver_contenido.php?id_contenido=19545&id_item_menu=31276">2020 - To date: Professor in charge of “Introduction to Deep learning“</a></b><br> Universidad Torcuato di Tella, Argentina </li>
-<li><b><a href="">2018-To date: Lecturer in “Digital Image Processing“</a></b><br> Universidad Nacional del Litoral, Argentina </li>
-<li><b><a href="https://campus.exactas.uba.ar/course/view.php?id=1435">November 2018: Visiting Professor in charge of “Deep learning for medical image analysis“</a></b><br> Departamento de Computación, Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires, Argentina </li>
-<li><b><a href="http://cours.etudes.ecp.fr/claroline/course/index.php?cid=TI1210">2013-2014: Teaching Assistant in “IS1210AB – Algorithmique – Programmation“</a></b><br> École Centrale Paris, France </li>
-<li><b><a href="http://cours.etudes.ecp.fr/claroline/course/index.php?cid=MA2818">2012-2014: Teaching Assistant in “MA2818JA – Introduction to computer and artificial vision“</a></b><br> École Centrale Paris, France</li>
-<li><b> <a href="http://cours.etudes.ecp.fr/claroline/course/index.php?cid=MA2500_IN23DE5">2012-2013: Teaching Assistant in “MA2500FA – Signal Processing”</b></a><br>École Centrale Paris, France</li>
-<li><b> <a href="http://aydalgor.alumnos.exa.unicen.edu.ar/">2011 – 2012:  Teaching Assistantin “Analysis and Design of Algorithms I and II“</b></a><br> Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN), Argentina</li>
-<li><b> <a href="http://ccomp2.alumnos.exa.unicen.edu.ar/">2009 – 2012: Teaching Assistant in “Computer Science II” (Computational Logic)</a></b><br>  Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN), Argentina</li>
-</ul>
-<hr>
-
-<br>
-<h2>Advising</h2>
-<br>
-<ul>
-
-<li><b>Engineering Degree Thesis. Métodos discretos para la registración de imágenes médicas: un algoritmo para el caso slice-to-volume.</b><br> R. Porchetto, F. Stramana. <br>Director: J. M. Massa. Co-director: E. Ferrante. <br>Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN), Argentina (2016) </li>
-
-<li><b><a href="http://ridaa.unicen.edu.ar/xmlui/handle/123456789/758">Engineering Degree Thesis. Una herramienta didáctica para el aprendizaje de semántica en lógica de predicados de primer orden.</a></b><br> C. L. Torres. <br>Director: M. V. Mauco. Co-director: E. Ferrante. <br>Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN), Argentina (2016) </li>
-
-<li><b>Engineering Degree Thesis. Aporte al desarrollo de aplicaciones interactivas en el Sistema Argentino de TV Digital Terrestre (SATVD-T).</b><br> M. F. Ochoa. <br>Director: C. García Bauza. Co-director: E. Ferrante. <br>Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN), Argentina (2015) </li>
-
-<li><a href="http://dl.dropboxusercontent.com/u/6212117/papers/2013/Tesis_Orlando_Materola.pdf">Engineering Degree Thesis. Segmentación de imágenes médicas tridimensionales basada en indicadores de textura.</a><br> J. I. Orlando, H. L. Manterola. <br>Director: M. del Fresno. Co-director: E. Ferrante. <br>Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN), Argentina (2013) </li>
-
-</ul>
-
-</article>
-
-
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-
-			</div>
-
-	</body>
-</html>
+<section id="about">
+  <h2>About</h2>
+  <div class="about">
+  <p>I hold a <a href="https://www.conicet.gov.ar/"><b>CONICET</b></a> Staff Research Scientist position in Buenos Aires, Argentina, leading a group on Robust Machine Learning for Healthcare and Biology at the <a href="https://liaa.dc.uba.ar/es/inicio/"><b>Applied Artificial Intelligence Laboratory - LIAA (CONICET / Universidad de Buenos Aires)</b></a>. I'm also a professor at <a href="https://www.utdt.edu/"><b>Universidad Torcuato Di Tella</b></a> and <a href="https://udesa.edu.ar/"><b>Universidad de San Andrés</b></a>. In 2012 I received my Systems Engineering Degree from <a href="http://www.unicen.edu.ar/"><b>UNICEN University</b></a>, Tandil, Argentina. In May 2016, I defended my <a href="https://tel.archives-ouvertes.fr/tel-01349640/document">PhD thesis</a> in Computer Science, at the <a href="https://www.universite-paris-saclay.fr/en"><b>Université Paris-Saclay</b></a> (<a href="https://www.centralesupelec.fr/"><b>CentraleSupélec</b></a> / <a href="http://www.inria.fr/en/"><b>INRIA</b></a>) in France (Paris) where I worked on deformable registration of multimodal medical images under the supervision of <a href="https://en.wikipedia.org/wiki/Nikos_Paragios">Prof. Nikos Paragios</a>. After that, until August 2017, I was a postdoc research associate at <a href="http://www.imperial.ac.uk/"><b>Imperial College London</b></a> (<a href="https://biomedia.doc.ic.ac.uk/"><b>BioMedIA</b></a> lab), under the supervision of <a href="http://wp.doc.ic.ac.uk/bglocker/">Prof. Ben Glocker</a> working on deep learning and brain image segmentation.</p>
+  <p>Since 2022 I'm also the Head of Machine Learning of <a href="https://apolobiotech.com.ar/"><b>Apolo Biotech</b></a>, a biotech startup specializing in RNA technologies for plants, and the Academic Leader of <a href="https://anyoneai.com/en/home"><b>Anyone AI</b></a>, an EdTech Startup focusing on building the largest pool of AI talent in LATAM.</p>
+  <p>I have also worked at several research institutes around the world. In 2023, I was an invited professor for half a year at <b>Université Paris-Saclay</b> (<a href="https://www.centralesupelec.fr/"><b>CentraleSupelec</b></a>) in Paris, France. In 2021, I received a <a href="https://us.fulbrightonline.org/">Fulbright Fellowship</a> to visit the <a href="https://www.martinos.org/"><b>A. Martinos Center for Biomedical Imaging</b></a> (<b>Massachusetts General Hospital</b> - <b>Harvard Medical School</b>) in Boston. In 2014, as PhD intern I spent 3 months working on shape understanding for the <a href="http://cvgl.stanford.edu/"><b>Computer Vision and Geometry Lab</b></a> at <a href="http://stanford.edu/"><b>Stanford University</b></a>, California, USA. During 2010, I was an intern at <a href="https://team.inria.fr/steep/"><b>STEEP Team</b></a> (<b>INRIA Grenoble</b>, France) working on transport/land-use mathematical modeling. Before moving to Buenos Aires, I was a <b>CONICET</b> researcher at the <b>Research Institute for Signals, Systems and Computational Intelligence, sinc(i)</b>, in Santa Fe, Argentina.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card contactcard">
+    <div class="contact-info">
+      <h3>Get in touch</h3>
+      <p>eferrante (at) dc (dot) uba (dot) ar</p>
+      <p class="office"><b>Office 2111</b><br>Edificio 0+Infinito, Ciudad Universitaria<br>Güiraldes 2160, Buenos Aires, Argentina</p>
+      <p class="muted">Applied Artificial Intelligence Laboratory (LIAA), CONICET / University of Buenos Aires</p>
+    </div>
+    <iframe class="map" title="Map: Edificio 0+Infinito, Ciudad Universitaria, Buenos Aires" src="https://www.google.com/maps?q=Pabell%C3%B3n+0%2BInfinito%2C+Ciudad+Universitaria%2C+Buenos+Aires%2C+Argentina&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <span>© 2026 Enzo Ferrante</span>
+  <span><a href="https://scholar.google.com/citations?user=ArqlkTUAAAAJ&hl=en">Google Scholar</a> · <a href="https://www.linkedin.com/in/enzo-ferrante/">LinkedIn</a> · <a href="https://twitter.com/enzoferrante/">X / Twitter</a></span>
+</div></footer>
+</body></html>
