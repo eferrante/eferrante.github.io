@@ -1,7 +1,7 @@
 /* Google Scholar citations per year (https://scholar.google.com/citations?user=ArqlkTUAAAAJ).
    To update: edit the numbers below (copy them from the Scholar profile). */
 (function(){
-  var YEARS={2017:94,2018:292,2019:574,2020:980,2021:1319,2022:1377,2023:1530,2024:1702,2025:2368,2026:2709};
+  var YEARS={2017:94,2018:292,2019:573,2020:981,2021:1319,2022:1375,2023:1531,2024:1710,2025:2367,2026:3090};
   var el=document.getElementById("citations-chart");if(!el)return;
   var es=/^es/i.test(document.documentElement.lang||"");
   var ys=Object.keys(YEARS),max=Math.max.apply(null,ys.map(function(y){return YEARS[y]}));
